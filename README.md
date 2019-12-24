@@ -45,3 +45,7 @@ com
          +- service
          |   +- ProductService.java
 ```
+
+- docker run --name=mysqlexam -e MYSQL_ROOT_PASSWORD=jaaa1234 -e MYSQL_DATABASE=scbexam -p 3306:3306 -d mysql
+- docker exec -it xxxxxx bash
+- mysql -u root -p
