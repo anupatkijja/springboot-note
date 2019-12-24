@@ -6,8 +6,6 @@ public static void main(String[] arr){
 ```
 
 
-
-# springdocker1
 ## install mvn (https://www.mkyong.com/maven/how-to-install-maven-in-windows/)
 http://maven.apache.org/download.cgi
 - Add System Variable MAVEN_HOME  C:\apache-maven-3.6.3
