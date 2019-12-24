@@ -6,8 +6,9 @@ public static void main(String[] arr){
 ```
 
 
-## install mvn (https://www.mkyong.com/maven/how-to-install-maven-in-windows/)
-http://maven.apache.org/download.cgi
+## install mvn 
+- (https://www.mkyong.com/maven/how-to-install-maven-in-windows/)
+- http://maven.apache.org/download.cgi
 - Add System Variable MAVEN_HOME  C:\apache-maven-3.6.3
 - Add PATH %MAVEN_HOME%\bin
 - mvn clean install  << create jar file
@@ -46,6 +47,6 @@ com
          |   +- ProductService.java
 ```
 
-- docker run --name=mysqlexam -e MYSQL_ROOT_PASSWORD=jaaa1234 -e MYSQL_DATABASE=scbexam -p 3306:3306 -d mysql
+- docker run --name mysqbookstore -p 3308:3306 -e MYSQL_ROOT_PASSWORD=P@ssw0rd1234 -e MYSQL_USER=exambookstore -e MYSQL_PASSWORD=P@ssw0rd -e MYSQL_DATABASE=bookstore -d mysql/mysql-server:5.7
 - docker exec -it xxxxxx bash
 - mysql -u root -p
