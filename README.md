@@ -50,3 +50,6 @@ com
 - docker run --name mysqbookstore -p 3308:3306 -e MYSQL_ROOT_PASSWORD=P@ssw0rd1234 -e MYSQL_USER=exambookstore -e MYSQL_PASSWORD=P@ssw0rd -e MYSQL_DATABASE=bookstore -d mysql/mysql-server:5.7
 - docker exec -it xxxxxx bash
 - mysql -u root -p
+
+
+https://dev.to/sandrogiacom/run-mysql-on-docker-and-use-in-your-java-app-jpn
