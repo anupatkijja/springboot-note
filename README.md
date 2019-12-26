@@ -52,4 +52,5 @@ com
 - mysql -u root -p
 
 
-https://dev.to/sandrogiacom/run-mysql-on-docker-and-use-in-your-java-app-jpn
+- https://dev.to/sandrogiacom/run-mysql-on-docker-and-use-in-your-java-app-jpn
+- https://dev.to/cuongld2/create-apis-with-jwt-authorization-using-spring-boot-24f9
