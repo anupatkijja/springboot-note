@@ -18,13 +18,18 @@ public static void main(String[] arr){
 
 run embedded server >>> mvn spring-boot:run
 
-## Dockerfile
+## Make image from Dockerfile
 - Create Dockerfile in folder
 - Run >> docker build -t hello-docker .
 - Run >> docker image ls
 - Run >> docker run -d -p 9000:8080 hello-docker
 
-
+## MYSQL Docker
+```
+- docker run --name mysqbookstore -p 3308:3306 -e MYSQL_ROOT_PASSWORD=P@ssw0rd1234 -e MYSQL_USER=exambookstore -e MYSQL_PASSWORD=P@ssw0rd -e MYSQL_DATABASE=bookstore -d mysql/mysql-server:5.7
+- docker exec -it xxxxxx bash
+- mysql -u root -p
+```
 
 
 ## Project structure
@@ -47,10 +52,10 @@ com
          |   +- ProductService.java
 ```
 
-- docker run --name mysqbookstore -p 3308:3306 -e MYSQL_ROOT_PASSWORD=P@ssw0rd1234 -e MYSQL_USER=exambookstore -e MYSQL_PASSWORD=P@ssw0rd -e MYSQL_DATABASE=bookstore -d mysql/mysql-server:5.7
-- docker exec -it xxxxxx bash
-- mysql -u root -p
+
 
 - https://www.javaguides.net/2018/09/spring-boot-2-jpa-mysql-crud-example.html
 - https://dev.to/sandrogiacom/run-mysql-on-docker-and-use-in-your-java-app-jpn
 - https://dev.to/cuongld2/create-apis-with-jwt-authorization-using-spring-boot-24f9
+- https://drissamri.be/blog/java/enable-https-in-spring-boot/
+
