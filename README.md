@@ -1,4 +1,8 @@
 # springboot-note
+
+- create package (save to target folder) >>> mvn clean install
+- run embedded server >>> mvn spring-boot:run
+
 ```java
 public static void main(String[] arr){
 
@@ -16,7 +20,6 @@ public static void main(String[] arr){
 ## install java (Download jdk from oracle)
 - Same of maven step
 
-run embedded server >>> mvn spring-boot:run
 
 ## Make image from Dockerfile
 - Create Dockerfile in folder
