@@ -51,6 +51,6 @@ com
 - docker exec -it xxxxxx bash
 - mysql -u root -p
 
-
+- https://www.javaguides.net/2018/09/spring-boot-2-jpa-mysql-crud-example.html
 - https://dev.to/sandrogiacom/run-mysql-on-docker-and-use-in-your-java-app-jpn
 - https://dev.to/cuongld2/create-apis-with-jwt-authorization-using-spring-boot-24f9
