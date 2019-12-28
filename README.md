@@ -57,8 +57,33 @@ com
 
 
 
+## Reference
 - https://www.javaguides.net/2018/09/spring-boot-2-jpa-mysql-crud-example.html
 - https://dev.to/sandrogiacom/run-mysql-on-docker-and-use-in-your-java-app-jpn
 - https://dev.to/cuongld2/create-apis-with-jwt-authorization-using-spring-boot-24f9
 - https://drissamri.be/blog/java/enable-https-in-spring-boot/
 
+## Jasypt 2.0
+```
+<dependency>
+   <groupId>com.github.ulisesbocchio</groupId>
+   <artifactId>jasypt-spring-boot-starter</artifactId>
+   <version>2.0.0</version>
+</dependency>
+--
+java -cp ~\.m2\repository\org\jasypt\jasypt\1.9.2\jasypt-1.9.2.jar org.jasypt.intf.cli.JasyptPBEStringEncryptionCLI input=PASSWORD password=[YOUR PASSWORD] algorithm=PBEWITHMD5ANDDES
+--
+pring.datasource.url=jdbc:mysql://localho:3306/DATABASE
+spring.datasource.username=USERNAME
+spring.datasource.password=ENC(p1AYgLWQoqqR8nJyon96Zzi/bCBh7rke)
+jasypt.encryptor.password=[YOUR PASSWORD]
+jasypt.encryptor.algorithm=PBEWITHMD5ANDDES
+--
+@SpringBootApplication
+@EnableEncryptableProperties
+public class Application {
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+}
+```
