@@ -62,6 +62,7 @@ com
 - https://dev.to/sandrogiacom/run-mysql-on-docker-and-use-in-your-java-app-jpn
 - https://dev.to/cuongld2/create-apis-with-jwt-authorization-using-spring-boot-24f9
 - https://drissamri.be/blog/java/enable-https-in-spring-boot/
+- ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-Dspring.profiles.active=dev","-jar","/rest-api.jar"]
 
 ## Jasypt 2.0
 ```
