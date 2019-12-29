@@ -29,7 +29,7 @@ public static void main(String[] arr){
 
 ## MYSQL Docker
 ```
-- docker run --name mysqbookstore -p 3308:3306 -e MYSQL_ROOT_PASSWORD=P@ssw0rd1234 -e MYSQL_USER=exambookstore -e MYSQL_PASSWORD=P@ssw0rd -e MYSQL_DATABASE=bookstore -d mysql/mysql-server:5.7
+- docker run --name mysqlbookstore -p 3308:3306 -e MYSQL_ROOT_PASSWORD=P@ssw0rd1234 -e MYSQL_USER=exambookstore -e MYSQL_PASSWORD=P@ssw0rd -e MYSQL_DATABASE=bookstore -d mysql/mysql-server:5.7
 - docker exec -it xxxxxx bash
 - mysql -u root -p
 ```
@@ -62,7 +62,24 @@ com
 - https://dev.to/sandrogiacom/run-mysql-on-docker-and-use-in-your-java-app-jpn
 - https://dev.to/cuongld2/create-apis-with-jwt-authorization-using-spring-boot-24f9
 - https://drissamri.be/blog/java/enable-https-in-spring-boot/
+
+## Active Profile
+
 - ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-Dspring.profiles.active=dev","-jar","/rest-api.jar"]
+- See the profile active when application startup "2562-12-29 19:35:04 - The following profiles are active: prod"
+```
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2562-12-29 19:35:04 - Starting BookstoreApplication v0.0.1-SNAPSHOT on DESKTOP-JDLG8BT with PID 6864 (C:\Users\Homely\Documents\book-store-dev\target\bookstore-0.0.1-SNAPSHOT.jar started by Homely in C:\Users\Homely\Documents\book-store-dev)
+2562-12-29 19:35:04 - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2562-12-29 19:35:04 - The following profiles are active: prod
+```
 
 ## Jasypt 2.0
 ```
