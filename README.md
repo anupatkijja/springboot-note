@@ -81,6 +81,12 @@ com
 2562-12-29 19:35:04 - The following profiles are active: prod
 ```
 
+
+# Generate Self certificate
+```
+keytool -genkey -alias tomcat -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
+```
+
 ## Jasypt 2.0
 ```
 <dependency>
@@ -105,3 +111,20 @@ public class Application {
     }
 }
 ```
+
+
+```
+INSERT INTO `bookstore`.`store_user` ( `created_at`, `updated_at`, `date_of_birth`, `name`, `password`, `surname`, `username`) VALUES( '2019-01-01 22:00:00', '2019-01-01 22:00:00', '2019-02-11', 'name11', 'pass11111', 'surname111', 'user1');
+INSERT INTO `bookstore`.`store_user` ( `created_at`, `updated_at`, `date_of_birth`, `name`, `password`, `surname`, `username`) VALUES( '2019-01-01 22:00:00', '2019-01-01 22:00:00', '2019-03-21', 'name22', 'pass11111', 'surname222', 'user2');
+INSERT INTO `bookstore`.`store_user` ( `created_at`, `updated_at`, `date_of_birth`, `name`, `password`, `surname`, `username`) VALUES( '2019-01-01 22:00:00', '2019-01-01 22:00:00', '2019-12-13', 'name33', 'pass11111', 'surname333', 'user3');
+
+
+INSERT  INTO `book_order`(`created_at`,`updated_at`,`book_id`,`user_id`) VALUES 
+('2019-01-01 22:00:00','2019-01-01 22:00:00',1,1),
+('2019-01-01 22:00:00','2019-01-01 22:00:00',2,1),
+('2019-01-01 22:00:00','2019-01-01 22:00:00',3,1),
+('2019-01-01 22:00:00','2019-01-01 22:00:00',1,2),
+('2019-01-01 22:00:00','2019-01-01 22:00:00',1,3);
+```
+
+
